@@ -1,1 +1,26 @@
 # PRO reasoning Skill 系列设计
+# skill-reasoning-prd.md 推理技能R&D PRD文档
+skill: 针对推理类型技能的嵌套式SKILL设计文档
+skillType: reasoning
+skillDescription: 本文对reasoning推理类型的技能做出4个维度的设计.分别为:分析,计算,逻辑推理,决策的架构设计.
+
+```text
+skill
+├── reasoning/
+│   ├── calculate/  # 计算
+│   ├── judge/      # 判断
+│   ├── logic/      # 逻辑
+│   ├── decision-making # 决策
+│   ├── analyze    # 分析
+│   └── SKILL.md
+└── skill-pack/
+    ├── reasoning/  # 推理脚本包
+    │   ├── base/   # 基础路径定义
+    │   ├── calculate/ # 计算
+    │   ├── judge/     # 判断
+    │   ├── decision-making/ # 决策
+    │   ├── analyze/   # 分析
+    │   ├── formula/  # 公式库
+    │   └── main.py  # 推理技能主入口
+    └── main.py # 技能包主入口
+```    
