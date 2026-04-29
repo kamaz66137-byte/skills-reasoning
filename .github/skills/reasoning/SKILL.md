@@ -23,7 +23,7 @@ description: 'AI推理技能套件：覆盖计算(calculate)、判断(judge)、�
 
 ## calculate 计算
 
-**路径**：`./calculate/SKILL.md`
+**路径**：[./calculate/SKILL.md](./calculate/SKILL.md)
 
 **职责**：处理一切需要数值运算的场景，包括公式求解、加权评分、统计指标计算和阈值验证。
 
@@ -33,7 +33,7 @@ description: 'AI推理技能套件：覆盖计算(calculate)、判断(judge)、�
 
 ## judge 判断
 
-**路径**：`./judge/SKILL.md`
+**路径**：[./judge/SKILL.md](./judge/SKILL.md)
 
 **职责**：对输入数据进行结构化判断，支持二分类、多分类、阈值判定、置信度评估及异常检测。
 
@@ -43,7 +43,7 @@ description: 'AI推理技能套件：覆盖计算(calculate)、判断(judge)、�
 
 ## logic 逻辑推理
 
-**路径**：`./logic/SKILL.md`
+**路径**：[./logic/SKILL.md](./logic/SKILL.md)
 
 **职责**：构建可追溯的推理链，支持演绎、归纳、溯因、概率、规则、模糊逻辑及约束满足。
 
@@ -53,7 +53,7 @@ description: 'AI推理技能套件：覆盖计算(calculate)、判断(judge)、�
 
 ## decision-making 决策
 
-**路径**：`./decision-making/SKILL.md`
+**路径**：[./decision-making/SKILL.md](./decision-making/SKILL.md)
 
 **职责**：基于多准则决策（MCDM）对候选方案进行量化评分和最优选择。
 
@@ -63,7 +63,7 @@ description: 'AI推理技能套件：覆盖计算(calculate)、判断(judge)、�
 
 ## analyze 分析
 
-**路径**：`./analyze/SKILL.md`
+**路径**：[./analyze/SKILL.md](./analyze/SKILL.md)
 
 **职责**：从数据中提取特征、识别模式、归因分析并给出可操作建议。
 

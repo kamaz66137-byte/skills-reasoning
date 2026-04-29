@@ -5,6 +5,10 @@ description: '逻辑推理技能：演绎推理、归纳推理、溯因推理、
 
 # Reasoning Logic 逻辑推理技能
 
+## 推理链模板
+
+详见：[推理类型标准推理链模板](./references/inference-patterns.md)
+
 ---
 
 ## Phase 1：识别推理类型

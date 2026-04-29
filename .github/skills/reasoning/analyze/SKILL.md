@@ -5,6 +5,10 @@ description: '推理分析技能：特征提取、相关性分析、聚类分析
 
 # Reasoning Analyze 推理分析技能
 
+## 分析报告模板
+
+详见：[分析类型结构化报告模板](./references/analysis-templates.md)
+
 ---
 
 ## Phase 1：确定分析类型和目标
