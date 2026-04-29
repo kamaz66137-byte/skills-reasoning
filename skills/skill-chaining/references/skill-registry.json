@@ -1,0 +1,47 @@
+{
+  "version": "1.0.0",
+  "skills": [
+    {
+      "name": "calculate",
+      "keywords": ["计算", "数值", "公式", "加权", "评分", "calculate", "formula", "numeric", "weighted", "score"],
+      "input_type": "numeric_expression",
+      "output_type": "numeric_result",
+      "domain": "mathematics"
+    },
+    {
+      "name": "judge",
+      "keywords": ["判断", "分类", "阈值", "置信度", "是否", "评估", "异常", "judge", "classify", "threshold", "confidence", "anomaly"],
+      "input_type": "classification_input",
+      "output_type": "judgment_result",
+      "domain": "classification"
+    },
+    {
+      "name": "logic",
+      "keywords": ["逻辑", "演绎", "归纳", "溯因", "概率", "规则", "推导", "logic", "deductive", "inductive", "abductive", "probabilistic"],
+      "input_type": "logical_proposition",
+      "output_type": "logical_conclusion",
+      "domain": "logic"
+    },
+    {
+      "name": "analyze",
+      "keywords": ["分析", "特征", "相关性", "聚类", "归因", "因果", "降维", "analyze", "feature", "correlation", "clustering", "attribution", "causal"],
+      "input_type": "data_input",
+      "output_type": "analysis_result",
+      "domain": "analysis"
+    },
+    {
+      "name": "decision-making",
+      "keywords": ["决策", "多准则", "选择", "方案", "权衡", "最优", "decision", "mcdm", "criteria", "optimize", "tradeoff"],
+      "input_type": "decision_options",
+      "output_type": "decision_result",
+      "domain": "decision"
+    },
+    {
+      "name": "semantic-dictionary",
+      "keywords": ["语义", "词义", "匹配", "相似度", "语义字典", "词义对照", "语义推理", "semantic", "similarity", "dictionary", "matching"],
+      "input_type": "semantic_query",
+      "output_type": "semantic_result",
+      "domain": "semantics"
+    }
+  ]
+}

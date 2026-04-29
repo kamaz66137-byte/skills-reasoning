@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SemanticDictionary",
+  "type": "object",
+  "required": ["version", "domain", "terms"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "description": "语义字典版本号，遵循语义化版本规范（SemVer）"
+    },
+    "domain": {
+      "type": "string",
+      "description": "字典所属领域标识符"
+    },
+    "terms": {
+      "type": "array",
+      "description": "词条列表",
+      "items": {
+        "type": "object",
+        "required": ["term", "definition", "synonyms", "related_terms", "domain"],
+        "properties": {
+          "term": {
+            "type": "string",
+            "description": "词条名称（唯一标识符）"
+          },
+          "definition": {
+            "type": "string",
+            "description": "词条定义"
+          },
+          "synonyms": {
+            "type": "array",
+            "description": "同义词列表",
+            "items": {
+              "type": "string"
+            }
+          },
+          "related_terms": {
+            "type": "array",
+            "description": "相关词条及其关系",
+            "items": {
+              "type": "object",
+              "required": ["term", "relation", "weight"],
+              "properties": {
+                "term": {
+                  "type": "string",
+                  "description": "相关词条名称"
+                },
+                "relation": {
+                  "type": "string",
+                  "description": "与当前词条的关系类型",
+                  "enum": ["is-a", "has-a", "related-to", "opposite-of", "part-of"]
+                },
+                "weight": {
+                  "type": "number",
+                  "description": "关系权重，表示关联强度",
+                  "minimum": 0,
+                  "maximum": 1
+                }
+              }
+            }
+          },
+          "domain": {
+            "type": "string",
+            "description": "词条所属领域"
+          },
+          "confidence": {
+            "type": "number",
+            "description": "词条定义的置信度（可选）",
+            "minimum": 0,
+            "maximum": 1
+          }
+        }
+      }
+    }
+  }
+}

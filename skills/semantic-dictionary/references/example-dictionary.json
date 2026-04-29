@@ -1,0 +1,200 @@
+{
+  "version": "1.0.0",
+  "domain": "reasoning",
+  "terms": [
+    {
+      "term": "reasoning",
+      "definition": "基于已知信息，通过逻辑推导得出结论的思维过程",
+      "synonyms": ["推理", "inference", "deduction", "思维推导"],
+      "related_terms": [
+        { "term": "logic",           "relation": "has-a",      "weight": 0.95 },
+        { "term": "judge",           "relation": "has-a",      "weight": 0.90 },
+        { "term": "calculate",       "relation": "has-a",      "weight": 0.85 },
+        { "term": "analyze",         "relation": "has-a",      "weight": 0.90 },
+        { "term": "decision-making", "relation": "has-a",      "weight": 0.88 }
+      ],
+      "domain": "reasoning",
+      "confidence": 1.0
+    },
+    {
+      "term": "judge",
+      "definition": "对输入数据进行结构化判断，支持二分类、多分类、阈值判定、置信度评估及异常检测",
+      "synonyms": ["判断", "分类", "classify", "判定", "评估"],
+      "related_terms": [
+        { "term": "reasoning",       "relation": "is-a",       "weight": 0.92 },
+        { "term": "threshold",       "relation": "has-a",      "weight": 0.88 },
+        { "term": "confidence",      "relation": "related-to", "weight": 0.85 },
+        { "term": "logic",           "relation": "related-to", "weight": 0.75 },
+        { "term": "calculate",       "relation": "related-to", "weight": 0.70 }
+      ],
+      "domain": "reasoning",
+      "confidence": 0.98
+    },
+    {
+      "term": "analyze",
+      "definition": "从数据中提取特征、识别模式、归因分析并给出可操作建议",
+      "synonyms": ["分析", "analysis", "归因", "特征提取", "pattern recognition"],
+      "related_terms": [
+        { "term": "reasoning",       "relation": "is-a",       "weight": 0.90 },
+        { "term": "calculate",       "relation": "related-to", "weight": 0.82 },
+        { "term": "logic",           "relation": "related-to", "weight": 0.78 },
+        { "term": "decision-making", "relation": "related-to", "weight": 0.80 },
+        { "term": "correlation",     "relation": "has-a",      "weight": 0.85 },
+        { "term": "clustering",      "relation": "has-a",      "weight": 0.80 }
+      ],
+      "domain": "reasoning",
+      "confidence": 0.97
+    },
+    {
+      "term": "logic",
+      "definition": "构建可追溯的推理链，支持演绎、归纳、溯因、概率、规则、模糊逻辑及约束满足",
+      "synonyms": ["逻辑", "logical reasoning", "演绎", "归纳", "deductive", "inductive"],
+      "related_terms": [
+        { "term": "reasoning",       "relation": "is-a",       "weight": 0.95 },
+        { "term": "judge",           "relation": "related-to", "weight": 0.75 },
+        { "term": "calculate",       "relation": "related-to", "weight": 0.65 },
+        { "term": "probability",     "relation": "has-a",      "weight": 0.88 },
+        { "term": "deduction",       "relation": "has-a",      "weight": 0.92 }
+      ],
+      "domain": "reasoning",
+      "confidence": 0.98
+    },
+    {
+      "term": "calculate",
+      "definition": "处理一切需要数值运算的场景，包括公式求解、加权评分、统计指标计算和阈值验证",
+      "synonyms": ["计算", "computation", "数值计算", "formula", "公式求解"],
+      "related_terms": [
+        { "term": "reasoning",       "relation": "is-a",       "weight": 0.85 },
+        { "term": "judge",           "relation": "related-to", "weight": 0.70 },
+        { "term": "analyze",         "relation": "related-to", "weight": 0.82 },
+        { "term": "weighted-score",  "relation": "has-a",      "weight": 0.90 },
+        { "term": "threshold",       "relation": "has-a",      "weight": 0.85 }
+      ],
+      "domain": "reasoning",
+      "confidence": 0.97
+    },
+    {
+      "term": "decision-making",
+      "definition": "基于多准则决策（MCDM）对候选方案进行量化评分和最优选择",
+      "synonyms": ["决策", "decision", "MCDM", "方案选择", "最优解", "optimization"],
+      "related_terms": [
+        { "term": "reasoning",       "relation": "is-a",       "weight": 0.88 },
+        { "term": "calculate",       "relation": "has-a",      "weight": 0.85 },
+        { "term": "judge",           "relation": "related-to", "weight": 0.80 },
+        { "term": "analyze",         "relation": "related-to", "weight": 0.80 },
+        { "term": "criteria",        "relation": "has-a",      "weight": 0.92 }
+      ],
+      "domain": "reasoning",
+      "confidence": 0.96
+    },
+    {
+      "term": "threshold",
+      "definition": "用于判定的临界值，当数值超过或低于该值时触发不同的处理分支",
+      "synonyms": ["阈值", "临界值", "cutoff", "boundary"],
+      "related_terms": [
+        { "term": "judge",           "relation": "part-of",    "weight": 0.88 },
+        { "term": "calculate",       "relation": "related-to", "weight": 0.80 },
+        { "term": "confidence",      "relation": "related-to", "weight": 0.75 }
+      ],
+      "domain": "reasoning",
+      "confidence": 0.95
+    },
+    {
+      "term": "confidence",
+      "definition": "对推理结论可信程度的量化评估，取值范围 [0, 1]",
+      "synonyms": ["置信度", "certainty", "可信度", "reliability"],
+      "related_terms": [
+        { "term": "judge",           "relation": "part-of",    "weight": 0.85 },
+        { "term": "logic",           "relation": "related-to", "weight": 0.80 },
+        { "term": "probability",     "relation": "related-to", "weight": 0.88 },
+        { "term": "threshold",       "relation": "related-to", "weight": 0.75 }
+      ],
+      "domain": "reasoning",
+      "confidence": 0.95
+    },
+    {
+      "term": "correlation",
+      "definition": "量化两个或多个变量之间关联强度的统计指标，取值范围 [-1, 1]",
+      "synonyms": ["相关性", "相关系数", "correlation coefficient", "关联度"],
+      "related_terms": [
+        { "term": "analyze",         "relation": "part-of",    "weight": 0.85 },
+        { "term": "calculate",       "relation": "related-to", "weight": 0.80 },
+        { "term": "clustering",      "relation": "related-to", "weight": 0.70 }
+      ],
+      "domain": "reasoning",
+      "confidence": 0.94
+    },
+    {
+      "term": "clustering",
+      "definition": "将数据点按相似性分组的无监督学习方法",
+      "synonyms": ["聚类", "cluster analysis", "分组", "grouping"],
+      "related_terms": [
+        { "term": "analyze",         "relation": "part-of",    "weight": 0.80 },
+        { "term": "correlation",     "relation": "related-to", "weight": 0.70 },
+        { "term": "calculate",       "relation": "related-to", "weight": 0.65 }
+      ],
+      "domain": "reasoning",
+      "confidence": 0.93
+    },
+    {
+      "term": "probability",
+      "definition": "描述随机事件发生可能性的数值度量，取值范围 [0, 1]",
+      "synonyms": ["概率", "likelihood", "可能性", "chance"],
+      "related_terms": [
+        { "term": "logic",           "relation": "part-of",    "weight": 0.88 },
+        { "term": "confidence",      "relation": "related-to", "weight": 0.88 },
+        { "term": "judge",           "relation": "related-to", "weight": 0.75 }
+      ],
+      "domain": "reasoning",
+      "confidence": 0.96
+    },
+    {
+      "term": "deduction",
+      "definition": "从一般性前提出发，通过逻辑规则推导出具体结论的推理方式",
+      "synonyms": ["演绎", "deductive reasoning", "推导", "演绎推理"],
+      "related_terms": [
+        { "term": "logic",           "relation": "part-of",    "weight": 0.92 },
+        { "term": "reasoning",       "relation": "is-a",       "weight": 0.85 },
+        { "term": "induction",       "relation": "opposite-of","weight": 0.70 }
+      ],
+      "domain": "reasoning",
+      "confidence": 0.96
+    },
+    {
+      "term": "induction",
+      "definition": "从具体实例出发，归纳出一般性规律的推理方式",
+      "synonyms": ["归纳", "inductive reasoning", "归纳推理", "generalization"],
+      "related_terms": [
+        { "term": "logic",           "relation": "part-of",    "weight": 0.90 },
+        { "term": "reasoning",       "relation": "is-a",       "weight": 0.85 },
+        { "term": "deduction",       "relation": "opposite-of","weight": 0.70 }
+      ],
+      "domain": "reasoning",
+      "confidence": 0.95
+    },
+    {
+      "term": "weighted-score",
+      "definition": "通过对各指标赋予权重并求和，得到综合评分的计算方法",
+      "synonyms": ["加权评分", "weighted sum", "综合评分", "加权求和"],
+      "related_terms": [
+        { "term": "calculate",       "relation": "part-of",    "weight": 0.90 },
+        { "term": "decision-making", "relation": "related-to", "weight": 0.85 },
+        { "term": "criteria",        "relation": "related-to", "weight": 0.82 }
+      ],
+      "domain": "reasoning",
+      "confidence": 0.94
+    },
+    {
+      "term": "criteria",
+      "definition": "用于评估和比较候选方案的量化评价指标集合",
+      "synonyms": ["准则", "评判标准", "criterion", "指标", "metrics"],
+      "related_terms": [
+        { "term": "decision-making", "relation": "part-of",    "weight": 0.92 },
+        { "term": "weighted-score",  "relation": "related-to", "weight": 0.82 },
+        { "term": "judge",           "relation": "related-to", "weight": 0.78 }
+      ],
+      "domain": "reasoning",
+      "confidence": 0.93
+    }
+  ]
+}
