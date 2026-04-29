@@ -5,6 +5,10 @@ description: '推理判断技能：二分类判断、多分类判断、阈值判
 
 # Reasoning Judge 推理判断技能
 
+## 阈值参考
+
+详见：[阈值判定参考指南](./references/threshold-guide.md)
+
 ---
 
 ## Phase 1：确定判断类型

@@ -7,7 +7,7 @@ description: '推理计算技能：数值计算、公式求解、加权评分、
 
 ## 公式库参考
 
-详见：[./references/formula-library.md](./references/formula-library.md)
+详见：[公式库参考文档](./references/formula-library.md)
 
 ---
 

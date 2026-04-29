@@ -5,6 +5,10 @@ description: '推理决策技能：多准则决策(MCDM)、加权评分决策、
 
 # Reasoning Decision-Making 推理决策技能
 
+## 决策方法参考
+
+详见：[多准则决策方法参考文档](./references/mcdm-methods.md)
+
 ---
 
 ## Phase 1：准入检查
